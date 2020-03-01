@@ -6,6 +6,7 @@ if [[ ! -z "$1" ]]; then
 fi
 
 echo "Running makepkg from $PWD"
+chown -R archbuilder "$PWD"
 
 # TODO: support extra flags
 
