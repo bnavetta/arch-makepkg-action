@@ -9,6 +9,6 @@ echo "Running makepkg from $PWD"
 
 # TODO: support extra flags
 
-makepkg
+su archbuilder -c makepkg
 
 namcap -i *.pkg.tar.xz
