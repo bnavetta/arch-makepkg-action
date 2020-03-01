@@ -2,7 +2,7 @@ FROM archlinux/base:latest
 
 RUN pacman -Syu --noconfirm base-devel namcap
 
-RUN useradd -M archbuilder
+RUN useradd -m archbuilder
 
 COPY entrypoint.sh /entrypoint.sh
 
